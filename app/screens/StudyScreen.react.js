@@ -6,7 +6,7 @@ import {
 export default class StudyScreen extends Component {
     render() {
       return (
-        <ScrollView style={{height:100, width: 300}}>
+        <ScrollView  onScroll={(e) => console.log(e.nativeEvent.contentOffset.y)}>
             <Text>AAAAA</Text>
             <Text>AAAAA</Text>
             <Text>AAAAA</Text>

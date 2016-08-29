@@ -6,7 +6,7 @@ import {
 export default class RemindScreen extends Component {
     render() {
       return (
-        <ScrollView style={{height:100, width: 300}}>
+        <ScrollView>
             <Text>{"Remind's body"}</Text>
         </ScrollView>
       );

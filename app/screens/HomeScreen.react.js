@@ -32,7 +32,7 @@ export default class HomeScreen extends Component {
 
     render() {
     return (
-      <View style={{flex: 1, height: 800}}>
+      <View style={{flex: 1 }}>
           <StatusBar
             backgroundColor={ statusBarColors[this.state.activeTab] }
             barStyle="light-content"
@@ -41,7 +41,7 @@ export default class HomeScreen extends Component {
             <Text style={{fontSize: 20, color: 'white', top: 15, left: 30}}>Easy words</Text>
           </View>
           <ScrollableTabView
-            initialPage={0}
+            initialPage={2}
             tabBarActiveTextColor={'white'}
             tabBarInactiveTextColor={'white'}
             tabBarTextStyle={{fontFamily: 'Roboto', fontSize: 15}}

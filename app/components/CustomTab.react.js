@@ -80,7 +80,6 @@ const CustomTab = React.createClass({
     return (
       <View style={[styles.tabs, {backgroundColor: this.props.backgroundColor, }, this.props.style, ]}>
         {this.props.tabs.map((tab, i) => this.renderTabOption(tab, i))}
-        <Animated.View style={[tabUnderlineStyle, { left, }, ]} />
       </View>
     );
   },
@@ -94,7 +93,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   tabs: {
-    height: 50,
+    height: 100,
     flexDirection: 'row',
     justifyContent: 'space-around',
     borderWidth: 1,
