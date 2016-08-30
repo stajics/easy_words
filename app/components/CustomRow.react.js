@@ -20,7 +20,7 @@ export default class CustomRow extends Component {
     render() {
       return (
           <View style={{justifyContent: 'space-between', flex:1, backgroundColor: 'white', height: 50, flexDirection: 'row'}}>
-            <Text>AAAAA</Text>
+            <Text>{this.props.rowData.data}</Text>
           </View>
       );
     }

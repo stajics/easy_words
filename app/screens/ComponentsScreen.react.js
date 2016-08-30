@@ -14,7 +14,7 @@ const List = selectableList(CustomRow,
   'white',
   false);
 
-export default class ProfileScreen extends Component {
+export default class ComponentsScreen extends Component {
     constructor(props) {
       super(props);
       this.state = { selected: [1,2], rowData: [{id: 1, data:'row 12'}, {id: 2, data: 'row 2'}, {id: 3, data: 'row 5'}]}

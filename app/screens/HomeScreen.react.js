@@ -13,8 +13,8 @@ import ScrollableTabView from 'react-native-scrollable-tab-view';
 import CustomTab from '../components/CustomTab.react';
 //screens
 import StudyScreen from './StudyScreen.react';
-import RemindScreenScreen from './RemindScreen.react';
-import ProfileScreen from './ProfileScreen.react';
+import AnimationsScreenScreen from './AnimationsScreen.react';
+import ComponentsScreen from './ComponentsScreen.react';
 
 //colors
 const tabColors = ['#65F1ED', '#ff99cc', '#F1C765'];
@@ -23,7 +23,7 @@ const statusBarColors = ['#2eb8b8', '#F480B5', '#e6b800']
 export default class HomeScreen extends Component {
     constructor(props) {
       super();
-      this.state = { activeTab: 0}
+      this.state = { activeTab: 1}
     }
 
     onChangeTab = (tab) => {
@@ -41,7 +41,7 @@ export default class HomeScreen extends Component {
             <Text style={{fontSize: 20, color: 'white', top: 15, left: 30}}>Easy words</Text>
           </View>
           <ScrollableTabView
-            initialPage={2}
+            initialPage={1}
             tabBarActiveTextColor={'white'}
             tabBarInactiveTextColor={'white'}
             tabBarTextStyle={{fontFamily: 'Roboto', fontSize: 15}}
@@ -50,8 +50,8 @@ export default class HomeScreen extends Component {
             renderTabBar={() => <CustomTab tabColors={tabColors}/>}
           >
             <StudyScreen tabLabel="study" />
-            <RemindScreenScreen tabLabel="remind" />
-            <ProfileScreen tabLabel="profile" />
+            <AnimationsScreenScreen tabLabel="animations" />
+            <ComponentsScreen tabLabel="components" />
           </ScrollableTabView>
       </View>
     );
